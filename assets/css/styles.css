@@ -1,0 +1,177 @@
+html, body{
+    font-family: 'Comic Neue', cursive !important;
+}
+
+/* GENERAL Y DESAFIO 1 */
+
+.area{
+
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;  
+    grid-template-areas:   
+        "navbar" 
+        "seccion-principal"
+        "pie-de-pagina";
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    
+  
+}
+
+nav {
+    grid-area: navbar;
+    background-color:black;
+    
+}
+
+section {
+    grid-area: seccion-principal;
+}
+
+footer {
+    grid-area: pie-de-pagina;
+    background-color:black;
+}
+
+.seccion-principal{
+    color: white;
+}
+
+.caja-imagen {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.img{
+    height: 60vh;   
+}
+
+.pie-de-pagina{
+    color: white;
+}
+
+nav a {
+    font-size: 1.3rem;
+    margin-right: 1em;
+    
+}
+nav a:hover {
+    font-weight: bolder;
+}
+
+.navbar-toggler{
+    color: rgb(255, 35, 35)!important;
+}
+
+span {
+    color: rgb(255, 35, 35)!important;
+}
+
+.nav-link{
+    color: rgb(255, 35, 35)!important;
+}
+
+.pie-de-pagina{
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 35, 35)!important;;
+}
+/* DESAFIO 2 */
+
+
+.seccion-principal{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+    
+.img-desafio-dos{    
+    display: flex;  
+    flex-direction: row;
+    gap: 1em;
+ 
+}
+
+.img-desafio-dos img {
+    height: 50vh;  
+}
+
+.numero-stickers{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.877);
+    font-size: 1.2rem;
+    border: solid 2px white;
+    padding: 1rem;
+  
+}
+
+/* DESAFIO 3 */
+
+.select{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    gap: 1em;
+}
+
+.seccion-principal h3{
+    margin-top: 2rem;
+}
+
+#mensaje{
+    margin-top: 1em;
+    font-size: 2rem;
+}
+
+
+
+@media (max-width: 579px){
+
+    .area{
+
+        display: grid;
+        grid-template-rows: 0.5fr 11fr 0.5Fr;  
+        grid-template-areas:   
+            "navbar" 
+            "seccion-principal"
+            "pie-de-pagina";
+        height: 133vh;
+        background-image: url(../img/fondo.jpg);
+        
+        
+      
+    }
+
+    .img-desafio-dos{    
+        display: flex;  
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+        
+    }
+
+    .img-desafio-dos img {
+        height: 20vh; 
+      
+    }
+
+    .numero-stickers{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.877);
+        font-size: 0.9rem;
+        border: solid 2px white;
+        padding: 0.5rem;
+     
+    }
+}
+
+
+
+
+
+

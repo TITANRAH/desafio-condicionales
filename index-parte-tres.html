@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Desafio 1</title>
+    <title>Desafio 3</title>
+</head>
+<body >
+    
+    <div class="area">
+      
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand nav-link" href="./index.html">Condiciones</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">    
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Desafio-1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index-parte-dos.html">Desafio-2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index-parte-tres.html">Desafio-3</a>
+                  </li>     
+            </ul>
+           <div class="nav-link">
+            <h1>Super Héroes</h1>
+           </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="seccion-principal">
+
+        <h3>INGRESA TU SUPER CONTRASEÑA</h3>
+        <div class="select">
+
+          <select id="valor1" class="form-select" onchange="seleccionarEingresar()" aria-label="Default select example">        
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <select id="valor2" class="form-select" onchange="seleccionarEingresar()" aria-label="Default select example">             
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <select id="valor3"  class="form-select" onchange="seleccionarEingresar()" aria-label="Default select example">       
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+        </div>
+        <button onclick="ingresar()" class="btn btn-primary mt-5">INGRESAR</button>
+
+        <p id="mensaje"></p>
+      </section>
+
+      <footer class="pie-de-pagina">
+        <h3>Desafio condicionales Super Héroes</h3>
+      </footer>
+    </div>
+     
+
+    <script src="./assets/js/script-index-tres.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
